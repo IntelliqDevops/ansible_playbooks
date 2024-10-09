@@ -1,0 +1,14 @@
+---
+- name: Install git on all servers and clone a remote git repo
+  hosts: all
+  tasks:
+    - name: Install git on all servers
+      apt:
+        name: git
+        state: present
+        update_cache: yes
+    - name: clone remote github repo
+      git:
+        repo: https://github.com/intelliqittrainings/maven.git
+        dest: /tmp/newgit
+...
