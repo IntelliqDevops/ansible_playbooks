@@ -1,5 +1,5 @@
 - name: Create a user on all servers
-  hosts: all
+  hosts: dbserver
   tasks:
     - name: Create a user
       user:
