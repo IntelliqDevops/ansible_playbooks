@@ -1,12 +1,12 @@
 - name: Create a user on all servers
-  hosts: dbserver
+  hosts: all
   tasks:
     - name: Create a user
       user:
-        name: Radha
+        name: Radhika
         password: intelliqit
-        uid: 2222
+        uid: 2269
         shell: /bin/bash
         comment: "regular user"
-        home: /tmp/Radha
+        home: /tmp/Radhika
 ...
