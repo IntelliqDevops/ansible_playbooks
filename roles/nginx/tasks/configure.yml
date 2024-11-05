@@ -1,0 +1,6 @@
+---
+- name: copy index.html file
+  copy:
+    src: "{{file1}}"
+    dest: "{{dest1}}"
+  notify: Check nginx response
